@@ -1,0 +1,10 @@
+{
+  "name": "logger",
+  "version": "0.1.0",
+  "description": "Simple @google-cloud/logging wrapper using winston",
+  "main": "lib/logger",
+  "repository": "git@github.com:benvgroup/logger.git",
+  "author": "Adilson Carvalho <lc.adilson@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
