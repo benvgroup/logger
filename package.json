@@ -12,6 +12,27 @@
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
     "test": "jest"
   },
+  "keywords": [
+    "benv",
+    "benv group",
+    "cloud",
+    "google api",
+    "google apis",
+    "google cloud platform",
+    "google cloud",
+    "google logging",
+    "google",
+    "logger",
+    "logging",
+    "loglevel",
+    "logs",
+    "stackdriver logging",
+    "stackdriver",
+    "sysadmin",
+    "tools",
+    "winston transport",
+    "winston"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
