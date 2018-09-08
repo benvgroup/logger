@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "babel . --out-dir dist --ignore dist,node_modules",
+    "build": "babel lib --out-dir dist/lib --ignore dist,node_modules",
+    "postbuild": "cp package.json dist",
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
     "test": "jest"
   },
