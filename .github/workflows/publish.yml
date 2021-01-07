@@ -29,4 +29,4 @@ jobs:
           sed -i -e 's/"private":\s*true/"private": false/g' dist/package.json
       - run: npm publish dist/ --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
