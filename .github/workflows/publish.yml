@@ -6,7 +6,7 @@ on:
     - v*
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,20 +22,11 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: yarn build
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-          registry-url: https://registry.npmjs.org/
       - name: Changes package from private to public
         run: |
           sed -i -e 's/"private":\s*true/"private": false/g' dist/package.json
-      - run: npm ci
-      - run: npm publish dist/ --access public
+      - run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+          npm publish dist/ --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
