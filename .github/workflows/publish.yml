@@ -27,6 +27,8 @@ jobs:
       - name: Changes package from private to public
         run: |
           sed -i -e 's/"private":\s*true/"private": false/g' dist/package.json
-      - run: npm publish dist/ --access public
+      - run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+          npm publish dist/ --access public
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
