@@ -1,5 +1,8 @@
 name: Run tests
-on: [push]
+on:
+  push:
+    branches:
+    - '*'
 
 jobs:
   build:
@@ -30,3 +33,5 @@ jobs:
     - run: yarn install
 
     - run: yarn test
+
+    - run: yarn build
