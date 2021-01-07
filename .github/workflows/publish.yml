@@ -33,7 +33,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Changes package from private to public
         run: |
-          sed -i -e 's/"private":\s*false/"private": true/g' a/teste.js
+          sed -i -e 's/"private":\s*true/"private": false/g' dist/package.json
       - run: npm ci
       - run: npm publish dist/ --access public
         env:
