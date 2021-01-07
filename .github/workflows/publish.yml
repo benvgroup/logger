@@ -2,6 +2,8 @@ name: Package Build and Publish
 
 on:
   push:
+    branches:
+    - fix/build
     tags:
     - v*
 
