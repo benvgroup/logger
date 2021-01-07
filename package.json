@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "@benvgroup/logger",
   "version": "0.1.0",
   "description": "Simple @google-cloud/logging wrapper using winston",
   "main": "lib/logger",
