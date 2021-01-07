@@ -1,6 +1,6 @@
 {
   "name": "@benvgroup/logger",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple @google-cloud/logging wrapper using winston",
   "main": "lib/logger",
   "repository": "git@github.com:benvgroup/logger.git",
