@@ -41,13 +41,13 @@
     "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.14.7",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "27.0.2",
+    "babel-jest": "27.0.5",
     "babel-preset-minify": "0.5.1",
     "eslint": "7.29.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-jest": "24.3.6",
-    "jest": "27.0.4"
+    "jest": "27.0.5"
   },
   "dependencies": {
     "colors": "1.4.0",
